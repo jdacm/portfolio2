@@ -412,19 +412,28 @@
         <script src="src/particle.js"></script>
         <script src="src/app.js"></script>
         <script src="src/script.js"></script>
-        <!-- Darkkkk script-->
+        <!-- Dark mode toggle script-->
         <script>
-            var mode = document.getElementById("mode");
-            icon.onclick = function(){
-                document.body.classlist.toggle("dark-theme");
-                if(document.body.classList.contains("dark-thme")){
-                    icon.scr = "assets/img/sun.png";
-                }else{
-                    icon.scr = "assets/img/moon.png";
-                }
-                }
+            var modeToggle = document.getElementById("mode");
             
-
+            // Load dark mode preference from localStorage
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+                modeToggle.src = 'assets/img/sun.png';
+            }
+            
+            modeToggle.onclick = function() {
+                document.body.classList.toggle('dark-mode');
+                
+                // Save preference to localStorage
+                if (document.body.classList.contains('dark-mode')) {
+                    localStorage.setItem('darkMode', 'enabled');
+                    modeToggle.src = 'assets/img/sun.png';
+                } else {
+                    localStorage.setItem('darkMode', 'disabled');
+                    modeToggle.src = 'assets/img/moon.png';
+                }
+            };
         </script>
     </body>
 </html>

@@ -5,7 +5,6 @@ const imageUrls = [
   'portfolio/image3.jpg',
   'portfolio/image4.jpg',
   'portfolio/image5.jpg',
-  'portfolio/image6.jpg',
   // ...more image URLs
 ];
 
@@ -15,7 +14,6 @@ const imageDescriptions = [
   'Senior HighSchool Diploma',
   'Handshake with PAPA',
   'Hug Mama',
-  'Faculty:Christine Gonzales',
   // ...more descriptions
 ];
 

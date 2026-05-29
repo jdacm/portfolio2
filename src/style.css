@@ -257,26 +257,169 @@ a#scroll-btn:before {
 }
 /* Dark mode styles */
 .dark-mode {
-  /* Background color for dark mode */
-  background-color: #1f1f1f;
-  color: #FF5733; /* Text color in dark mode */
-  --bg1: #0ef;
+  --bg1: #1a1a1a;
+  --display: #1f1f1f;
+  --light: #e0e0e0;
+  --dark: #fff;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
 
-  /* Example styles, modify according to your design */
-  /* Navbar background and text color */
-  .navbar {
-      background-color: #ffffff;
-      color: #ffffff;
+.dark-mode body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
 
-  .navbar-nav .nav-link:nth-child(1):hover {
-    color: var(--danger);
+.dark-mode .navbar {
+  background-color: rgba(26, 26, 26, 0.95) !important;
+}
 
-  }
-  }
-  
+.dark-mode .navbar-nav .nav-link {
+  color: #e0e0e0 !important;
+}
 
-  /* Additional styles for other elements */
-  /* ... */
+.dark-mode .navbar-nav .nav-link:hover {
+  color: var(--danger) !important;
+}
+
+.dark-mode .navbar-brand #icon-bg {
+  fill: #e0e0e0;
+}
+
+.dark-mode .home {
+  background-color: #1a1a1a;
+}
+
+.dark-mode .home .content .intro h2 {
+  color: #e0e0e0;
+}
+
+.dark-mode .home .content .intro p {
+  color: #c0c0c0;
+}
+
+.dark-mode .about {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.dark-mode .row h1 {
+  color: #e0e0e0;
+}
+
+.dark-mode .contact {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.dark-mode .contact-info {
+  color: #e0e0e0;
+}
+
+.dark-mode .contact-info h3 {
+  color: #e0e0e0;
+}
+
+.dark-mode .contact-info p {
+  color: #c0c0c0;
+}
+
+.dark-mode .short-message {
+  color: #e0e0e0;
+}
+
+.dark-mode .short-message h3 {
+  color: #e0e0e0;
+}
+
+.dark-mode .short-message p {
+  color: #c0c0c0;
+}
+
+.dark-mode .contact-buttons h3 {
+  color: #e0e0e0;
+}
+
+.dark-mode .contact-buttons .btn {
+  color: #e0e0e0;
+  border-color: #2D31FA;
+  background-color: transparent;
+}
+
+.dark-mode .contact-buttons .btn:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.dark-mode .portfolio {
+  background-color: #1a1a1a;
+}
+
+.dark-mode .portfolio h2 {
+  color: #e0e0e0;
+}
+
+.dark-mode footer {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+}
+
+.dark-mode footer .top {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+}
+
+.dark-mode footer .bottom {
+  background-color: #000;
+  color: #e0e0e0;
+}
+
+.dark-mode footer .content {
+  color: #e0e0e0;
+}
+
+.dark-mode footer .content a {
+  color: #e0e0e0;
+}
+
+.dark-mode footer .content a:hover {
+  color: var(--danger);
+}
+
+.dark-mode .progress {
+  background-color: #333;
+}
+
+.dark-mode .skill-name {
+  color: #e0e0e0;
+}
+
+.dark-mode .intro h3 {
+  color: #e0e0e0;
+}
+
+.dark-mode .intro p {
+  color: #c0c0c0;
+}
+
+.dark-mode .project {
+  background-color: #1a1a1a;
+}
+
+.dark-mode .project .container .title h2 {
+  color: #e0e0e0;
+}
+
+.dark-mode .project .container .content .cards .desc-content {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .project .container .content .cards .desc-content .tag h3 {
+  color: #e0e0e0;
+}
+
+.dark-mode .project .container .content .cards .desc-content .desc p {
+  color: #c0c0c0;
 }
 <!-- skills>
 .skill {
